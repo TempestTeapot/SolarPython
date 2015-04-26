@@ -1,0 +1,55 @@
+Python solar web calculator 
+
+Main loop
+Load last site data from pickle
+Load last user data from pickle
+Get user data for IP
+Save site data to pickle 
+Save user data to pickle 
+
+Functions 
+Get site data from CSS? JSON?
+Get cost of installation from user
+
+Parse data into total amount saved
+Subtract total amount saved from total cost of installation 
+Calculate rate of saving
+Predict date 
+
+
+http://eguage14368.egaug.es
+
+Simpler solar calculator
+
+
+Raw solar data response
+
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE group PUBLIC "-//ESL/DTD eGauge 1.0//EN" "http://www.egauge.net/DTD/egauge-hist.dtd">
+<group serial="0x598afc3a">
+<data columns="6" time_stamp="0x53df8ad8" time_delta="60" epoch="0x53df8ad8">
+ <cname t="P">Main Panel</cname>
+ <cname t="P">Garage Array</cname>
+ <cname t="P">Garage Array+</cname>
+ <cname t="P">House Array</cname>
+ <cname t="P">House Array+</cname>
+ <cname t="P">Geothermal</cname>
+ <r><c>-768702</c><c>19236788</c><c>7615</c><c>-5139065</c><c>58911</c><c>-13884682</c></r>
+</data>
+</group>
+
+cname = columns
+r = rows
+columns by rows to create table
+
+column 3(2 from 0) = Garage Array+
+column 5(4 from 0) = House Array+
+
+
+http://egauge14368.egaug.es/cgi-bin/egauge-show?n=1&m&f=1407159000
+
+
+Garage Array +
+House Array +
+
+ignore Main Panel, plain arrays and Geothermal
